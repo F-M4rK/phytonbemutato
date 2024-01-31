@@ -1,3 +1,73 @@
-header{
-    background-color: blue;
+body{
+    background-color: rgba(207, 207, 207, 0.658);
+    font-size: 19px;
 }
+header ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+header li {
+        margin: 0 0 1px 0;
+        float: left;
+        padding: 0;
+        margin: 0 20px 0 0 ;
+    }
+
+header a{
+    display: block;
+    text-decoration: none;
+    border-left: #be0000 solid 6px;
+    border-bottom:  #be0000 solid 5px;
+    /*border-radius: 6px;*/
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(158, 158, 158);
+    background-color: #be0000;
+    border-left: #8a0202 solid 6px;
+    border-bottom:  #8a0202 solid 5px;
+}
+
+main{
+        margin-top: 80px;
+        padding-left: 650px;
+        padding-right: 650px;
+    }
+
+#beolvasás{
+        background-color: rgb(238, 150, 250);
+        border: 3px black solid;
+        border-radius: 25px;
+        padding: 10px 10px 30px 50px;
+    }
+
+button {
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #4caf50;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+button:hover {
+        background-color: #45a049;
+    }
+
+footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+footer a:hover{
+        text-decoration: line-through;
+        color: rgb(238, 150, 250);
+        font-weight: bold;
+    }

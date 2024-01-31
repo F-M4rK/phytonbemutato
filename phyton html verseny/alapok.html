@@ -5,25 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fájl beolvasása</title>
-	<link rel="sytlesheet" href="alap.css">
+	<link rel="stylesheet" href="alap.css">
 </head>
 <body>
 	<header>
 		<h1>AAAAAAA</h1>
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><a href="index.html">index</a></li>
+				<li><a href="alapok.html">beolvasás</a></li>
+				<li><a href="c.html">c</a></li>
+				<li><a href="d.html">d</a></li>
 			</ul>
 	</header>
 
 	<main>
 	
-		<div>
+		<div id="beolvasás">
 		<h1>Fájl beolvasása</h1>
 			<p>Itt egy példa a fájl beolvasásáról:</p>
 			<p>f=open("példa.txt","r",encoding="utf-8")</p>
+			<h2>Probáld ki:</h2>
+			<p>A kód:>f=open("példa.txt","r",encoding="utf-8")</p>
+			<button onclick="toggleResult()">Eredmény</button>
+            <div id="result" class="result-container"></div>
+			<script>
+				var resultVisible = False;
+		
+				function toggleResult() {
+					var resultDiv = document.getElementById('result');
+					resultVisible = !resultVisible;
+		
+					if (resultVisible) {
+						// Python code for file reading
+						var pythonCode = 'f=open("példa.txt","r",encoding="utf-8")';
+						// Example result
+						var result = 'Ez lenne a fájl tartalma...';
+						
+						resultDiv.innerHTML = '<strong>Python kód eredménye:</strong><br>' + result;
+						resultDiv.style.display = 'block';
+					} else {
+						resultDiv.innerHTML = '';
+						resultDiv.style.display = 'none';
+					}
+				}
+			</script>
 		</div>
 
 
@@ -31,7 +56,7 @@
 	
 	
 	<footer>
-		<p><a href="alapok.html">Vissza</p>
+		<p><a href="alapok.html">Vissza</a></p>
 	</footer>
 	
 </body>
