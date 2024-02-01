@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fájl beolvasása</title>
-	<link rel="stylesheet" href="alap.css">
+	<link rel="stylesheet" href="írás.css">
 </head>
 <body>
 	<header>
 		<h1>PYTHON</h1>
 			<ul>
 				<li><a href="index.html">index</a></li>
-				<li><a href="alapok.html" class="active">beolvasás</a></li>
-				<li><a href="írás.html">írás</a></li>
+				<li><a href="alapok.html" >beolvasás</a></li>
+				<li><a href="írás.html" class="active">írás</a></li>
 				<li><a href="d.html">létrehozás</a></li>
 			</ul>
 	</header>
 
 	<main>
 	
-		<div id="beolvasás">
+		<div id="írás">
 		<h1>Fájl beolvasása</h1>
-			<p>Itt egy példa a fájl beolvasásáról:</p>
-			<p>f=open("példa.txt","r",encoding="utf-8")</p>
+			<p>Itt egy példa a fájlba írásról:</p>
+			<p>f=open("példa.txt","w",encoding="utf-8")</p>
 			<h2>Probáld ki:</h2>
-			<p><strong>A kód: </strong>f=open("példa.txt","r",encoding="utf-8")</p>
+			<p><strong>A kód: </strong>f=open("példa.txt","w",encoding="utf-8")</p>
 			<button onclick="toggleResult()">Eredmény</button>
             <div id="result" class="result-container"></div>
 			<script>
