@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fájl beolvasása</title>
+	<link rel="stylesheet" href="írás.css">
+</head>
+<body>
+	<header>
+		<h1>PYTHON</h1>
+			<ul>
+				<li><a href="index.html">index</a></li>
+				<li><a href="alapok.html" >beolvasás</a></li>
+				<li><a href="írás.html" class="active">írás</a></li>
+				<li><a href="d.html">létrehozás</a></li>
+			</ul>
+	</header>
+
+	<main>
+	
+		<div id="írás">
+		<h1>Fájl beolvasása</h1>
+			<p>Itt egy példa a fájlba írásról<strong> a kód: </strong></p>
+				<p class="kod">f=open("példa.txt","w",encoding="utf-8")</p>
+				<p class="kod">f.write("Ezt írtam a fájlba.")</p>
+				<p class="kod">f.close()</p>
+			
+			<h2>Probáld ki:</h2>
+			<button onclick="toggleResult()">Eredmény</button>
+            <div id="result" class="result-container"></div>
+			<script>
+				var resultVisible = False;
+		
+				function toggleResult() {
+					var resultDiv = document.getElementById('result');
+					resultVisible = !resultVisible;
+		
+					if (resultVisible) {
+						// Python code for file reading
+						var pythonCode = 'f=open("példa.txt","w",encoding="utf-8")';
+						// Example result
+						var result = 'Ezt írtam a fájlba.';
+						
+						resultDiv.innerHTML = '<strong>Python kód eredménye:</strong><br>' + result;
+						resultDiv.style.display = 'block';
+					} else {
+						resultDiv.innerHTML = '';
+						resultDiv.style.display = 'none';
+					}
+				}
+			</script>
+		</div>
+
+
+    </main>
+	
+	
+	<footer>
+		<p><a href="írás.html">Vissza</a></p>
+	</footer>
+	
+</body>
+</html>

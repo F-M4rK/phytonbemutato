@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fájl beolvasása</title>
+	<link rel="stylesheet" href="alap.css">
+</head>
+<body>
+	<header>
+		<h1>PYTHON</h1>
+			<ul>
+				<li><a href="index.html">index</a></li>
+				<li><a href="alapok.html" class="active">beolvasás</a></li>
+				<li><a href="írás.html">írás</a></li>
+				<li><a href="d.html">létrehozás</a></li>
+			</ul>
+	</header>
+
+	<main>
+	
+		<div id="beolvasás">
+		<h1>Fájl beolvasása</h1>
+			<p>Itt egy példa a fájl beolvasásáról<strong> a kód: </strong></p>
+			<p class="kod">f=open("példa.txt","r",encoding="utf-8")</p>
+			<p class="kod">f.close()</p>
+			<h2>Probáld ki:</h2>
+			<button onclick="toggleResult()">Eredmény</button>
+            <div id="result" class="result-container"></div>
+			<script>
+				var resultVisible = False;
+		
+				function toggleResult() {
+					var resultDiv = document.getElementById('result');
+					resultVisible = !resultVisible;
+		
+					if (resultVisible) {
+						// Python code for file reading
+						var pythonCode = 'f=open("példa.txt","r",encoding="utf-8")';
+						// Example result
+						var result = 'Ez lenne a fájl tartalma...';
+						
+						resultDiv.innerHTML = '<strong>Python kód eredménye:</strong><br>' + result;
+						resultDiv.style.display = 'block';
+					} else {
+						resultDiv.innerHTML = '';
+						resultDiv.style.display = 'none';
+					}
+				}
+			</script>
+		</div>
+		<div id="magyarázat">
+			<h1>Magyarázat:</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem laborum odio alias molestiae culpa, doloribus, asperiores placeat tempora itaque eligendi explicabo repellat nisi pariatur tenetur ipsum modi facere! Tenetur molestiae similique nemo, alias est necessitatibus architecto sequi sed, rerum vitae ut, fuga et eius. Deleniti sequi nobis repellat optio delectus porro atque quam quaerat maxime nisi repellendus ipsa, id tempore. Unde aspernatur quidem non reiciendis fugit inventore voluptates nobis quis repellat asperiores sapiente, debitis ullam? Aperiam nostrum mollitia explicabo at provident facere perferendis fugiat dolorem obcaecati odit earum aspernatur odio, consequatur reiciendis debitis iure laboriosam alias. Qui nulla eius molestias suscipit tempore velit necessitatibus laudantium magnam nostrum, commodi repudiandae, quod fugit? Esse nemo in quos optio voluptate laboriosam saepe, illo recusandae consectetur voluptas obcaecati ab architecto aperiam provident a fugiat quas eveniet doloribus repellendus minus facere! Fuga, non dignissimos. Libero architecto rerum reprehenderit laborum repellendus, voluptatibus voluptatem ullam odit.
+			</p>
+
+		</div>
+
+
+    </main>
+	
+	
+	<footer>
+		<p><a href="alapok.html">Vissza</a></p>
+	</footer>
+	
+</body>
+</html>

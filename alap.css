@@ -1,0 +1,114 @@
+body{
+    background-color: rgba(255, 255, 255, 0.753);
+    font-size: 19px;
+}
+
+header{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(251, 255, 42);
+    padding: 10px;
+    
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin-bottom: 0;
+}
+
+header ul {
+        display: flex;
+        margin: 0;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+header li {
+        margin: 0 0 1px 0;
+        float:left;
+        padding: 0;
+        margin: 0 20px 0 0 ;
+    }
+
+header a{
+    display: block;
+    text-decoration: none;
+    border-left: #141414 solid 6px;
+    border-bottom:  #000000 solid 5px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #313131;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(158, 158, 158);
+    background-color: #1f1f1f;
+    border-left: #000000 solid 6px;
+    border-bottom:  #000000 solid 5px;
+}
+
+header a.active{
+    background-color: rgb(44, 161, 60);
+    border-left: rgb(35, 129, 48)  solid 6px ;
+    border-bottom:rgb(35, 129, 48) solid 5px ;
+}
+
+main{
+        margin-top: 80px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+#beolvasás{
+        background-color: rgb(93, 124, 123);
+        border: 3px black solid;
+        border-radius: 25px;
+        padding: 10px 10px 30px 50px;
+        margin-bottom: 200px;
+    }
+
+#magyarázat{
+        background-color: rgb(251, 255, 42);
+        border: 3px rgb(93, 124, 123) solid;
+        border-radius: 25px;
+        padding: 10px 10px 30px 50px;
+}
+
+
+#magyarázat p{
+    text-align: start;
+}
+
+.kod{
+    margin: 0px;
+    padding: 0;
+}
+
+button {
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #4caf50;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        cursor: pointer;   
+    }
+
+button:hover {
+        background-color: #3f9644;
+    }
+
+footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+footer a:hover{
+        text-decoration: line-through;
+        color: rgb(238, 150, 250);
+        font-weight: bold;
+    }
